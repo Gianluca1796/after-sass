@@ -1,0 +1,23 @@
+header{
+    @include flex (row, space-around, center);
+    padding: var(--spacing-small) 0;
+    border-bottom: 2px solid var(--secondary);
+    margin-top: 20px;
+    .header__img{
+        max-width: 120px;
+    }
+    .menu{
+        display: flex;
+        gap: $spacing-small;
+    }
+    .menu__link{
+        font-size: $text-medium;
+        padding: $spacing-xsmall;
+        border: 2px solid #fff;
+        &:hover{
+            color: blue;
+        }
+    }
+}
+
+
