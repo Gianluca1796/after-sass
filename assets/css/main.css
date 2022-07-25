@@ -30,14 +30,23 @@ img {
   width: 100%; }
 
 /*MIXINS*/
+.bg-adventure {
+  background-color: #6ce46c; }
+
+.bg-football {
+  background-color: #5746f3; }
+
+.bg-action {
+  background-color: #e03636; }
+
 /* HEADER */
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: var(--spacing-small) 0;
-  border-bottom: 2px solid var(--secondary);
+  padding: 2rem 0;
+  border-bottom: 2px solid #FF5376;
   margin-top: 20px; }
   header .header__img {
     max-width: 120px; }
@@ -54,6 +63,13 @@ header {
 /*FOOTER*/
 /*VIEWS*/
 /* Main */
+.btn, .btn-adventure, .btn-football, .btn-action {
+  margin-top: 10px;
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: .5rem; }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -75,21 +91,18 @@ header {
   display: flex;
   flex-direction: column;
   padding: 2.4rem; }
-
-.box__title {
-  font-family: "Roboto Slab", serif;
-  font-size: 2.2em;
-  color: #120D31; }
-
-.box__subtitle {
-  margin-top: 0.6 rem;
-  color: #2B2B2B;
-  font-size: 1.6em; }
-
-.box__text {
-  margin-top: 1rem;
-  font-size: 1.6em;
-  color: #2B2B2B; }
+  .box__info .box__title {
+    font-family: "Roboto Slab", serif;
+    font-size: 2.2em;
+    color: #120D31; }
+  .box__info .box__subtitle {
+    margin-top: 0.6 rem;
+    color: #2B2B2B;
+    font-size: 1.6em; }
+  .box__info .box__text {
+    margin-top: 1rem;
+    font-size: 1.6em;
+    color: #2B2B2B; }
 
 /*Info*/
 .info {

@@ -1,7 +1,7 @@
 header{
     @include flex (row, space-around, center);
-    padding: var(--spacing-small) 0;
-    border-bottom: 2px solid var(--secondary);
+    padding: $spacing-small 0;
+    border-bottom: 2px solid $secondary;
     margin-top: 20px;
     .header__img{
         max-width: 120px;

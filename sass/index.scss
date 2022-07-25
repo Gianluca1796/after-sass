@@ -4,9 +4,11 @@
 @import "./misc/normalize";
 /*MIXINS*/
 @import "./misc/mixins";
+@import "./misc/maps";
 
 /* HEADER */ 
 @import "./partials/header";
+
 
 /*FOOTER*/
 @import "./partials/footer";
@@ -14,3 +16,4 @@
 /*VIEWS*/
 @import "./views/home";
 @import "./views/gallery"
+

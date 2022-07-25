@@ -1,5 +1,23 @@
 /* Main */ 
-
+.btn{
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: .5rem;
+}
+.btn-adventure{
+    @extend .btn;
+    // background-color: rgb(108, 228, 108);
+}
+.btn-football{
+    @extend .btn;
+    // background-color: rgb(87, 70, 243);
+}
+.btn-action{
+    @extend .btn;
+    // background-color: rgb(224, 54, 54);
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -22,25 +40,25 @@
     display: flex;
     flex-direction: column;
     padding: $spacing-medium;
+    .box__title{
+        font-family: $font-title;
+        font-size: $text-medium;
+        color: $primary;
+    }
+    
+    .box__subtitle{
+        margin-top: 0.6 rem;
+        color: $text-color;
+        font-size: $text-base;
+    }
+    
+    .box__text{
+        margin-top: $spacing-xsmall;
+        font-size: $text-base;
+        color: $text-color;
+    }
 }
 
-.box__title{
-    font-family: $font-title;
-    font-size: $text-medium;
-    color: $primary;
-}
-
-.box__subtitle{
-    margin-top: 0.6 rem;
-    color: $text-color;
-    font-size: $text-base;
-}
-
-.box__text{
-    margin-top: $spacing-xsmall;
-    font-size: $text-base;
-    color: $text-color;
-}
 
 /*Info*/
 
